@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+<head>
+	<title>LabWork7</title>
+	<meta charset="utf-8">
+  <script type="text/javascript">
+    function sort(){
+      lessons = new Array("алгебра", "геометрия", "информатика", "физика", "русский", "литература", "английский язык", "история");
+      document.write("Предметы: "+lessons);
+      tehn = new Array();
+      guman = new Array();
+      tehn  = lessons.slice(0,4);
+      guman = lessons.slice(4,8);
+      for(var i = 0; i < guman.length; i++)
+      document.write("<tr><td>"+tehn[i]+"</td><td>"+guman[i]+"</td></tr>"); 
+    }
+  </script>
+<style>
+    td{ border-left:1px solid black;}
+</style>
+</head>
+<body>
+  		<table>
+        <tr>
+          <th>Технические предметы</th>
+          <th>Гуманитарные предметы</th>
+        </tr>
+     <script type="text/javascript">
+            sort();
+     </script>
+
+     </table>
+
+      <a  href="Lab6.html"><button>Задание №6</button></a>
+</body>
+</html>
