@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+<head>
+	<title>Задание 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+  
+<script type="text/javascript">
+        function preson_name(){
+        name = prompt("Введите сюда свое имя:");
+        massage  = "<div class='name'> Ваше имя "+name+"</div>";
+        document.body.innerHTML = massage;
+        }
+  function restart(){
+  if(confirm("Начать заново?")){
+
+  if(confirm("Не надоело?!!!")){
+    preson_name();
+    setTimeout(rename,1000);
+  }
+  else {
+    alert("Ну и правильно, молодец!");
+  }
+}
+}
+preson_name();
+setTimeout(restart,1000);
+     </script>
+      <a  href="Lab2.html"><button>Задание №2</button></a>
+      <a href="Lab4.html"><button>Задание №4</button></a>
+
+</body>
+</html>
